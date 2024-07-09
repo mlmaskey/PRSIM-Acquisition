@@ -36,13 +36,13 @@ This script allows the user to download the spatial climate data stored in the *
   `python main_extract_PRISM_daily.py --root_dir='path/to/downloaded_prism_data' --start_year=YEAR --end_year=YEAR --attribute=VARIABLE --station_file='STATION LIST FILE --output_dir=path/to/data_dir --scale=SCALE`
   Pror to this, the user needs to prepare a list of station in a csv file the includes in the following order:
   
-  * `*Station,*`
-  * `*Name,*`
-  * `Longitude,*`
-  *  `Latitude,*`
-  *  `Elevation(m) [optional],*`
-  *  `Network [optional],*` and
-  *  `stnid [optional],*`
+  * `Station,`
+  * `Name,`
+  * `Longitude,`
+  *  `Latitude,`
+  *  `Elevation(m) [optional],`
+  *  `Network [optional],` and
+  *  `stnid [optional],`
 
 
 
