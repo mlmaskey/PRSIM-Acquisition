@@ -6,8 +6,8 @@
     Date: September 27, 2023
     E-mail: mahesh.maskey@usda.gov/mmaskey@ucdavis.edu
 """
-# Syntax: python main_extract_PRISM_daily.py --root_dir='X:/Mahesh.Maskey/Data/Climate' --start_year=1981
-# --end_year=2023 --attribute=ppt --station_file=''/<file.name.csv>
+# Syntax: python main_extract_PRISM_daily.py --root_dir='path/to/downloaded_PRISM_data' --start_year=1981
+# --end_year=2023 --attribute=ppt --station_file=''/<file.name.csv> ----output_dir='path/to/save_dir' --scale=daily
 
 import argparse
 import os
