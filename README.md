@@ -16,8 +16,9 @@ To download spatialy use [FTP portal](https://ftp.prism.oregonstate.edu). This p
 * fortran format
   
 # Primary Steps
-## Download the spatial data 
+## Step 1: Download the spatial data 
 Spatial data in bill format can be downloaded in daily or monthly scale as follows:
+
 `python main_download --dir2Save='path/to/save_spatial_data' --start_year=START_YEAR --end_year=END_YEAR --scale=SCALE --attribute=VARIABLE`
 
 This script allows the user to download the spatial climate data stored in the **PRISM FTP portal** either in daily or monthly scale. For this the user needs to specify:
@@ -32,7 +33,7 @@ This script allows the user to download the spatial climate data stored in the *
 
  `attribute`: The weather variable to download the data, including  `ppt` for *precipitation*, `tmax` for *minimum temperature*, `tmean` for *mean temperature*, `tmax` for *maximum temperature*, `vpdmin` for *minimum Vapor pressure deficit*, and `vpdmax for *maximum vapor pressure deficit*, and `tdmean` for *mean dewpoint temperature*
 
- ## Extract daily PRISM data
+ ## Step 2: Extract daily PRISM data
  
   `python main_extract_PRISM_daily.py --root_dir='path/to/downloaded_prism_data' --start_year=YEAR --end_year=YEAR --attribute=VARIABLE --station_file='STATION LIST FILE --output_dir=path/to/data_dir --scale=SCALE`
   
