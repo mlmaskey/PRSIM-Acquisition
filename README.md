@@ -19,7 +19,7 @@ To download spatialy use [FTP portal](https://ftp.prism.oregonstate.edu). This p
 ## Step 1: Download the spatial data 
 Spatial data in bill format can be downloaded in daily or monthly scale as follows:
 
-`python main_download --dir2Save='path/to/save_spatial_data' --start_year=START_YEAR --end_year=END_YEAR --scale=SCALE --attribute=VARIABLE`
+`python main_download.py --dir2Save='path/to/save_spatial_data' --start_year=START_YEAR --end_year=END_YEAR --scale=SCALE --attribute=VARIABLE`
 
 This script allows the user to download the spatial climate data stored in the **PRISM FTP portal** either in daily or monthly scale. For this the user needs to specify:
 
