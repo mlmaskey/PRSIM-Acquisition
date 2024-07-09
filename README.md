@@ -7,6 +7,7 @@ To download spatialy use [FTP portal](https://ftp.prism.oregonstate.edu). This p
 
 # Python Packages
 * os
+* pathlib
 * pandas
 * zipfile
 * geopandas
@@ -21,7 +22,20 @@ Spatial data in bill format can be downloaded in daily or monthly scale as follo
 
 This script allows the user to download the spatial climate data stored in the **PRISM FTP portal** either in daily or monthly scale. For this the user needs to specify:
 
-`dir2Save`: Path to save the download PRISM spatial data saved under the [FTP portal](https://ftp.prism.oregonstate.edu)
+`dir2Save`: Path to save the download PRISM spatial data saved under the [FTP portal](https://ftp.prism.oregonstate.edu) (string)
 
-`start_year`: 
+`start_year`: Begining of the year to download the data (integer)
+
+`end_year`: End of the year to download the data  (integer)
+
+`scale`: Temporal scale, monnthly or daily  (string)
+
+ `attribute`: The weather variable to download the data, including  `ppt` for *precipitation*, `tmax` for *minimum temperature*, `tmean` for *mean temperature*, `tmax` for *maximum temperature*, `vpdmin` for *minimum Vapor pressure deficit*, and `vpdmax for *maximum vapor pressure deficit*, and `tdmean` for *mean dewpoint temperature*
+
+ ## Extrct daily PRISM data
+  `python main_extract_PRISM_daily.py --root_dir='path/to/downloaded_prism_data' --start_year=YEAR --end_year=YEAR --attribute=VARIABLE --station_file='STATION LIST FILE --output_dir=path/to/data_dir --scale=SCALE`
+  Pror to this, the user needs to prepare a list of station in a csv file the includes in the following order
+  `*Station,*` `*Name,*` `Longitude,*` `Latitude,*` `Elevation(m) [optional],*`  `Network [optional],*` and `stnid [optional],*`
+
+
 
