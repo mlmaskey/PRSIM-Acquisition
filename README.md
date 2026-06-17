@@ -2,6 +2,10 @@
 
 **PRISM-Acquisition** is an open-source Python package that automates the acquisition, extraction, processing, and organization of PRISM climate datasets. The package provides command-line interface (CLI) tools and modular Python functions for downloading daily and monthly PRISM weather and solar radiation products, extracting climate variables at user-defined monitoring stations, and generating analysis-ready time-series datasets. Daily datasets can be readily aggregated to monthly, seasonal, annual, or other user-defined temporal scales, while additional processing utilities are under active development. PRISM-Acquisition is intended for hydrologic, agricultural, environmental, ecological, and geospatial applications requiring efficient access to long-term, high-resolution climate data.
 
+## Workflow
+![PRISM-Acquisition Workflow](Figures/IntroFigure.png)
+
+
 ## *PRISM Climate Data*
 **PRISM climate datasets are maintained by the PRISM Climate Group at Oregon State University. PRISM (Parameter-elevation Regressions on Independent Slopes Model) provides high-resolution daily and monthly weather and solar radiation datasets. This package downloads and processes these datasets from the official PRISM FTP portal.**
 
