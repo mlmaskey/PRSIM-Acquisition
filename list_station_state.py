@@ -14,7 +14,7 @@ shape_file = os.path.join(out_dir, f'US_Boundary.shp')
 gdf_US.to_file(shape_file)
 state_name = 'Mississippi'
 out_dir = create_save_folder(root_dir=out_dir, sub_dir=state_name)
-data_dir = 'X:/Mahesh.Maskey/Data/Climate/'
+data_dir = 'path/to/Data/Folder/'
 
 df_station_ppt, gdf_STATE_ppt, gdf_state_ppt, df_state_ppt = get_list(gdf_US, data_dir=data_dir, save_dir=out_dir,
                                                                       state_name=state_name, station_file=None,
