@@ -144,7 +144,8 @@ def read_bil_file(main_path, var_name, year, ymd, scale):
     files = os.listdir(sub_dir)
     bil_file = None
     for file in files:
-        if file.endswith('.bil'):
+        # if file.endswith('.bil'): #added tiff 5/17/2026
+        if file.endswith('.bil') or file.endswith('.tif'): 
             bil_file = file
             break
     bil_file_path = os.path.join(sub_dir, bil_file)
@@ -201,9 +202,12 @@ def read_import_data(data_dir, state_name, attribute, year):
     :param year:
     :return:
     '''
-    data_dir = os.path.join(data_dir, state_name)
     file = f'Prism_{attribute}_{year}.csv'
-    file_path = os.path.join(data_dir, file)
+    if state_name==None:
+        file_path = os.path.join(data_dir, file)
+    else:
+        data_dir = os.path.join(data_dir, state_name)  
+        file_path = os.path.join(data_dir, file)
     df = pd.read_csv(file_path)
     return df
 
