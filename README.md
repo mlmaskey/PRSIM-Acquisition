@@ -1,11 +1,13 @@
 # Python-based Tool to Acquire [PRISM Climate data](https://prism.oregonstate.edu)
-## *Extract data from spatial data*
-The purpose of this tool is to download and compile daily and monthly weather data from PRISM Climate Data, maintained **[Origon State University](https://prism.oregonstate.edu/)**. The PRISM model is *[Parameter-elevation Relationships on Independent Slopes Model](https://prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf).* 
 
-For daily and monthly weather data, the available variables are **Precipitation**, **Minimum temperature**, **Mean temperature**, **Maximum temperature**, **Minimum Vapor Pressure Deficit**, **Maximum Vapor Pressure Deficit**, and **Mean dewpoint temp.**
-To download spatially, use [FTP portal](https://ftp.prism.oregonstate.edu). This portal includes spatial data for each day or each month.
+PRISM-Acquisition is an open-source Python package designed to automate the acquisition, extraction, processing, and organization of PRISM climate datasets. The package provides a command-line interface (CLI) and modular Python functions for downloading PRISM weather and solar radiation products, extracting data at user-defined monitoring stations, concatenating time-series datasets, and organizing outputs into analysis-ready formats. It is intended for hydrologic, agricultural, environmental, ecological, and geospatial applications requiring efficient access to long-term, high-resolution PRISM climate data.
 
-# Python Packages
+## *PRISM Climate Data*
+**PRISM climate datasets are maintained by the PRISM Climate Group at Oregon State University. PRISM (Parameter-elevation Regressions on Independent Slopes Model) provides high-resolution daily and monthly weather and solar radiation datasets. This package downloads and processes these datasets from the official PRISM FTP portal.**
+
+For daily and monthly datasets, the supported variables include **Precipitation, Minimum Temperature, Maximum Temperature, Mean Dew Point Temperature, Minimum Vapor Pressure Deficit, Maximum Vapor Pressure Deficit, Total Shortwave Solar Radiation, Slope Shortwave Solar Radiation, Clear-Sky Shortwave Solar Radiation, and Atmospheric Transmittance. Spatial datasets are downloaded from the official PRISM FTP portal, which provides daily and monthly gridded climate products.**
+
+# Python Dependencies
 * os
 * pathlib
 * pandas
@@ -69,6 +71,18 @@ Descriptions of all supported PRISM weather and solar radiation variables are ba
 
 For additional information, see:
 - **PRISM Datasets Documentation (Oregon State University): [https://ftp.prism.oregonstate.edu/PRISM_datasets.pdf]**
+
+## Citation
+
+If this software is used in research, publications, reports, or other scholarly work, please cite this repository. Citation helps acknowledge the contribution of this project and supports its continued development.
+
+**Suggested citation:**
+
+```text
+Maskey, M. L. (2026). PRISM-Acquisition: A Python-Based Tool to Acquire and Process PRISM Climate Data. GitHub Repository. https://github.com/mlmaskey/PRSIM-Acquisition
+```
+
+In addition, users should cite the official PRISM Climate Group datasets, where appropriate. Detailed information on the supported weather and solar radiation variables is available in the official **[PRISM documentation](https://ftp.prism.oregonstate.edu/PRISM_datasets.pdf)**.
   
 
 
