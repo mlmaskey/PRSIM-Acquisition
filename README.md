@@ -1,6 +1,6 @@
 # Python-based Tool to Acquire [PRISM Climate data](https://prism.oregonstate.edu)
 ## *Extract data from spatial data*
-The purpose of this tool is to download and compile daily and monthly weather data from PRISM Climate Data, maintained **[Origon State University](https://prism.oregonstate.edu/)** The PRISM model is *[Parameter-elevation Relationships on Independent Slopes Model](https://prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf).* 
+The purpose of this tool is to download and compile daily and monthly weather data from PRISM Climate Data, maintained **[Origon State University](https://prism.oregonstate.edu/)**. The PRISM model is *[Parameter-elevation Relationships on Independent Slopes Model](https://prism.oregonstate.edu/documents/pubs/2008intjclim_physiographicMapping_daly.pdf).* 
 
 For daily and monthly weather data, the available variables are **Precipitation**, **Minimum temperature**, **Mean temperature**, **Maximum temperature**, **Minimum Vapor Pressure Deficit**, **Maximum Vapor Pressure Deficit**, and **Mean dewpoint temp.**
 To download spatially, use [FTP portal](https://ftp.prism.oregonstate.edu). This portal includes spatial data for each day or each month.
@@ -62,6 +62,15 @@ This script allows the user to download spatial climate data stored on the **PRI
 `state-name`: Name of the U.S. state used to process and organize PRISM weather data (`string`). If `None`, data for all available stations are concatenated and saved in the Weather_Data directory without a state-specific station information file name; otherwise, outputs are generated for the specified state, and the station metadata file is named accordingly.
 
  `data-dir`: Path to spatial data saved in **Step 2**
+
+## PRISM Documentation
+
+Descriptions of all supported PRISM weather and solar radiation variables are based on the official PRISM Climate Group dataset documentation.
+
+For additional information, see:
+- **PRISM Datasets Documentation (Oregon State University): [https://ftp.prism.oregonstate.edu/PRISM_datasets.pdf]**
+  
+
 
 
 
